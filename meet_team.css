@@ -1,0 +1,850 @@
+/* The body class sets the default styles for the entire page */
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+h1 {
+text-align: center;
+font-size: 280%;
+  }
+
+/* The p class sets the styles for all paragraph elements */
+p {
+    font-size: 170%;
+    padding: 1%;
+    margin-top: 1%;
+    padding-right: 15%;
+
+}
+
+/* The h1,h2 class sets the styles for all h1 and h2 heading elements */
+h2,h3 {
+    font-size: 280%;
+    padding: 1%;
+    margin-bottom: auto;
+    padding-right: 15%;
+}
+
+@media only screen and (max-width: 1368px){
+    html, body{
+    width:100%;
+    overflow-x:hidden;
+    }
+  }
+@media only screen and (max-width: 768px){
+    html, body{
+    width:100%;
+    overflow-x:hidden;
+  }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #292929f5;
+    height: 50px;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+  
+  }
+  
+  .nav-links a:hover {
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    /* display: flex; */
+    justify-content: flex-end;
+    width: auto;
+  }
+  
+  .navbar-logo img {
+    /* Set the height of the image to be 100% of the navbar height */
+    height: 100%;
+  }
+  
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Ensures the navbar takes the full width */
+    padding: 0 20px;
+    /* Optional: add padding for better spacing */
+  }
+  
+  .navbar-logo img {
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+  }
+  
+  
+  .nav-links a {
+    color: #ffffff;
+    text-align: center;
+    padding: 1vh 1.5vh;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  
+  .nav-links a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #1b1b1b7f;
+  }
+
+/* CSS for Desktop */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* CSS for Tablet */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+      flex-direction: row;
+    }
+  
+    .nav-links {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  /* CSS for Mobile */
+  @media screen and (max-width: 480px) {
+    .navbar-container {
+      flex-direction: row;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+/* The .navbar class sets the styles for the navigation bar */
+/* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #292929f5;
+    height: 50px;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    
+    
+} */
+
+/* The .navbar-logo class sets the styles for the logo inside the navigation bar */
+/* .navbar-logo {
+    height: 75%;
+    width: 2.5%;
+    margin-left: 3.0%;
+} */
+
+/* The .nav-links class sets the styles for the container of the navigation links */
+/* .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    text-decoration: none;
+    text-underline-offset: 50px;
+} */
+/* .navbar-logo img {
+    Set the height of the image to be 100% of the navbar height
+    height: 100%;
+} */
+
+/* The .nav-links a class sets the styles for the navigation links */
+/* .nav-links a {
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 23px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+} */
+
+
+
+/* The .nav-links a:hover class sets the styles for the navigation links when they are hovered over */
+/* .nav-links a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #1b1b1b7f;
+} */
+
+/* The .nav class sets the styles for the navigation container */
+
+
+/* The .nav a class sets the styles for the links inside the navigation container */
+/* .nav a {
+    float: right;
+    display: block;
+} */
+
+/* The .team class sets the styles for the team members container */
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 6%;
+}
+
+/* The .team class sets the styles for the team members container */
+.team1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 20%;
+}
+
+
+/* The .member-image class sets the styles for the team member's image */
+.member-image {
+    border-radius: 0%;
+    width: 240px;
+    height: 240px;
+}
+
+/* The .member-name class sets the styles for the team member's name */
+.member-name {
+    font-size: 150%;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* The .member-role class sets the styles for the team member's role */
+.member-role {
+    text-align: center;
+}
+
+/* The .member-bio class sets the styles for the team member's bio */
+.member-bio {
+    text-align: center;
+}
+
+/* The .footer-main class sets the styles for the main footer */
+.footer-main {
+    background: #000000;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6%;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    color: #ffffff;
+    padding: 3% 5%;
+    
+}
+
+/* The .footer-icons class sets the styles for the container of the icons in the footer */
+.footer-icons a i {
+    color: #ffffff;
+    font-size: 170%;
+}
+
+
+/* The .footer-icons a i class sets the styles for the icons in the footer */
+.footer-icons a i {
+    color: #ffffff;
+    font-size: 170%; /* Makes the icons white */
+}
+
+/* The .footer-icons a:nth-child(1):hover i class changes the color of the first icon in the footer when it's hovered over */
+.footer-icons a:nth-child(1):hover i {
+    color: #1877F2;
+}
+
+/* The .footer-icons a:nth-child(2):hover i class changes the color of the second icon in the footer when it's hovered over */
+.footer-icons a:nth-child(2):hover i {
+    color: #1DA1F2;
+}
+
+/* The .footer-icons a:nth-child(3):hover i class changes the color of the third icon in the footer when it's hovered over */
+.footer-icons a:nth-child(3):hover i {
+    color: #C13584;
+}
+
+/* The .footer-icons a:nth-child(4):hover i class changes the color of the fourth icon in the footer when it's hovered over */
+.footer-icons a:nth-child(4):hover i {
+    color: #0A66C2;
+}
+/* The .footer-space class allows the element to take up the remaining space in the footer */
+.footer-space {
+    flex-grow: 1;
+}
+
+
+/* The .footer-space class allows the element to take up the remaining space in the footer */
+.footer-content {
+    display: flex;
+}
+
+.footer-heading {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    color: #eee;
+    font-weight: 800;
+    font-size: 120%;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* The .footer-heading class sets the styles for the heading in the footer */
+.footer-details {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    color: #eee;
+    font-weight: 100;
+    font-size: 100%;
+    text-align: left;
+}
+
+/* The .footer-details:hover class changes the color and cursor when the footer details are hovered over */
+.footer-details:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* The .footer-img class sets the styles for the image in the footer */
+.footer-img {
+    width: 20%;
+    border-radius: 50%;
+    align-items: center;
+    padding-top: 20%;
+}
+
+/* The .img-div class sets the styles for the image container */
+.img-div {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+/* Carousel styles */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    height: 300px;
+    scroll-snap-type: x mandatory;
+    padding: 2%;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.member {
+    position: relative;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding-left: 2.5%;
+    /* margin-right: 30px; */
+    transition: 0.5s;
+    display: inline-block; /* Add this line to make it a horizontal row */
+    width: 17%; /* Adjust the width to fit 5 members in a row */
+    
+    
+}
+
+.member img {
+    width: 70%;
+    height: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;  
+    box-sizing: border-box; 
+    
+    
+}
+
+.member-info .member-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10%;
+}
+
+
+
+.member-info .member-role {
+    font-size: 1.2rem;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+
+.member:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.member:hover .member-info {
+    opacity: 1;
+}
+
+
+/* core members */
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 23%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  
+  /* Add some shadows to create a card effect */
+  /* Add some shadows to create a card effect */
+
+.cards{
+    padding: 2%; 
+    position: relative;
+    right: 2%;   
+}
+
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2% 5%; /* 2% top and bottom, 5% left and right */
+    padding: 2%; /* Adjust as needed */
+    margin-left: 16%; 
+}
+
+
+
+.cards_2{
+    position: relative;
+    left: 4%;
+}
+
+/* .cards-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+/* @media (max-width: 576px) {
+    .cards_2 {
+        margin-left: 5%;
+    }
+  } */
+.container {
+    display: flex; /* Enables flex context for direct children */
+    flex-wrap: wrap; /* Allows the items to wrap as needed */
+    justify-content: center; /* Centers items on the line (horizontally) */
+    align-items: center; /* Centers items on the cross-axis (vertically) */
+    padding: 2%; /* Adjust as needed */
+    margin: 2%; /* Adjust as needed */
+    height: 200px;
+}
+
+.title  {
+    color: grey; 
+    
+}
+.text-below-heading {
+    font-size: 24px; /* Adjust as needed */
+}
+
+.text-below-title {
+    font-size: 30px; /* Adjust as needed */
+}
+
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 300px) {
+    
+    .member img{
+        width: 70%;  
+        height: 70%;         
+    }
+
+
+} 
+
+@media only screen and (max-width: 800px){
+
+    .member-image{
+        width: 120%;
+        height: 120%;
+    }
+
+
+    .member-info {
+        position: absolute;
+        top: 48%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        width: 45px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;  
+        box-sizing: border-box;
+        
+    }
+
+
+    
+
+    /* Three columns side by side */
+.column {
+    float: left;
+    width: 47%;
+    margin-bottom: 16px;
+    padding: 0 6px;
+  }
+  
+  
+  /* Add some shadows to create a card effect */
+  /* Add some shadows to create a card effect */
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 7%; /* Increase this value to increase spacing */
+  padding: 15%; /* Adjust as needed */
+  width: 65%;
+}
+
+.container {
+    display: flex; /* Enables flex context for direct children */
+    flex-wrap: wrap; /* Allows the items to wrap as needed */
+    justify-content: center; /* Centers items on the line (horizontally) */
+    align-items: center; /* Centers items on the cross-axis (vertically) */
+    padding: 1%; /* Adjust as needed */
+    margin: 2%; /* Adjust as needed */
+    height: 75px;
+}
+
+.title  {
+    color: grey; 
+    
+}
+.text-below-heading {
+    font-size: 15px; /* Adjust as needed */
+}
+
+.text-below-title {
+    font-size: 13px; /* Adjust as needed */
+}  
+
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 19%;
+    background: #000;
+    color: #fff;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 1000%;
+    padding: 6px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-box4, .footer-box5 {
+    margin: 5px 0;
+  }
+
+  .cards{
+    padding-left: 20%;    
+  }
+
+/* testing */
+
+    
+
+}
+
+@media only screen and (max-width: 1400px){
+    .member-info {
+        position: absolute;
+        top: 48%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        width: 130px;
+        height: 130px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;  
+        box-sizing: border-box; 
+        
+    }
+
+    .member-info .member-name {
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        /* margin-left: 4%;
+        margin-top: 2%; */
+    }
+
+    .member-info .member-role {
+        font-size: 90%;
+        font-weight: bold;
+        text-align: center;
+        /* margin-left: 4%; */
+    }
+
+
+    
+}
+.member {
+    width: 38%; /* Adjust the width to fit 1 member in a row */
+    padding-left: 10%;
+    margin: 0 10px; /* Adjust this value to reduce/increase space between cards */
+   /* Adjust this value to reduce/increase space between rows */
+
+
+}
+
+
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 600px) {
+    .member {
+        width: 38%; /* Adjust the width to fit 1 member in a row */
+        padding-left: 10%;
+        margin: 0 10px; /* Adjust this value to reduce/increase space between cards */
+
+
+    }
+}
+
+
+
+/* Footer styles */
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 11%;
+    background: #000;
+    color: #fff;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
+    padding-left: 0;
+    gap: 25px; /* Reduce the gap between the icons */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 10px; /* Push the content away */
+}
+
+.footer-box4,
+.footer-box5 {
+    margin: 10px 0;
+}
+
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+  .snip1577 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-right: 0px; /* Adjust as needed */
+    /* min-width: 280px;
+    max-width: 230px; */
+    width: 270px; /* Adjust as needed */
+    height: 170px; /* Adjust as needed */
+    color: white;
+    text-align: left;
+    line-height: 1.4em;
+    background-color: black;
+    font-size: 110%;
+    
+}
+
+.snip1577.hover:after{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: black;
+    
+}
+.snip1577 *,
+.snip1577:before,
+.snip1577:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1577 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.snip1577:before,
+.snip1577:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1577:before {
+  width: 0;
+  height: 1px;
+}
+
+.snip1577:after {
+  height: 0;
+  width: 1px;
+}
+
+.snip1577 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.snip1577 h3,
+.snip1577 h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.snip1577 h4 {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.snip1577 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1577:hover img,
+.snip1577.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before,
+.snip1577:hover:after,
+.snip1577.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before {
+  width: 40px;
+}
+
+.snip1577:hover:after,
+.snip1577.hover:after {
+  height: 40px;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3,
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  opacity: 1;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
